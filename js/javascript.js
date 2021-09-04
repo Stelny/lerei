@@ -17,7 +17,20 @@ $(document).ready(function () {
       }
     }
 
-    function navsCarousel(element, nav) {
+    $('.menu-toggle').click(function(e) {
+      e.preventDefault()
+      
+      const defaults = "active";
+      const element = ".header-dropdown";
+      if ($(element).hasClass(defaults)) {
+        $(element).removeClass(defaults);
+        console.log("cai");
+      } else {
+        $(element).addClass(defaults);
+      }
+    })
+
+   /* function navsCarousel(element, nav) {
       $(nav+' .prev').click(function() {
         element.trigger('prev.owl.carousel');
       })
@@ -288,6 +301,6 @@ $(document).ready(function () {
       }
       console.log(a);
     })
-      
+      */
     
 });

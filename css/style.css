@@ -109,6 +109,7 @@ body {
 }
 .header {
     padding-bottom: 0.25rem;
+    position: relative;
 }
 .header ul li::after {
     content: "|";
@@ -139,6 +140,7 @@ body {
     list-style: none;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
 
 }
 .header-menu ul li a {
@@ -156,3 +158,94 @@ body {
     font-size: 15px;
     font-weight: 600;
 }
+.header .header-dropdown ul li,.header .header-dropdown ul li a {
+    color: #293644;
+    font-size: 16px;
+} 
+.header .header-dropdown {
+    height: 100%;
+    position: fixed;
+    top: 88px;
+    background: white;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid #00000020;
+    padding: 2rem 1.5rem;
+    display: none;
+    justify-content: center;
+}
+.header .header-dropdown ul {
+    max-width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.header .header-dropdown ul li {
+    margin-bottom: 0.75rem;
+}
+
+@media (max-width: 1500px) { 
+    .header ul li, .header ul li a {
+        font-size: 16px;
+    }
+    .cart-header-text {
+        font-size: 13px;
+    }
+    .header ul li::after {
+        font-size: 24px;
+    }
+} 
+
+@media (max-width: 1350px) { 
+    .header ul li, .header ul li a {
+        font-size: 14px;
+    }
+    .cart-header-text {
+        font-size: 12px;
+    }
+    .header ul li::after {
+        font-size: 22px;
+    }
+    .header-content .brand-header {
+        max-width: 10%;
+    }
+    .header-content {
+        padding: .5rem 0;
+    }
+    .header-content .left-header, .header-content .right-header {
+        max-width: 45%;
+    }
+}
+@media (max-width: 1200px) { 
+    .header ul li, .header ul li a {
+        font-size: 13px;
+    }
+}
+@media (max-width: 991px) { 
+    .header ul li::after {
+        content: '';
+    }
+    .header-content .left-header, .header-content .right-header,.header .brand-header {
+        max-width: calc(100%/3);
+    }
+    .header .brand-header {
+        display: flex;
+        justify-content: center;align-items: center;
+    }
+    .header .brand-header img {
+        max-width: 100px;
+    }
+    .right-header ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header ul li {
+        padding: 0 .5rem;
+    }
+    .cart-header-text {
+        display: none;
+    }
+    .header-dropdown.active {
+        display: flex;
+    }
+} 

@@ -19,16 +19,26 @@ $(document).ready(function () {
 
     $('.menu-toggle').click(function(e) {
       e.preventDefault()
-      
-      const defaults = "active";
       const element = ".header-dropdown";
-      if ($(element).hasClass(defaults)) {
-        $(element).removeClass(defaults);
-        console.log("cai");
-      } else {
-        $(element).addClass(defaults);
-      }
+      thisClass(element);
     })
+
+    $('.dropdown-lang-toggle').click(function(e) {
+      e.preventDefault();
+      const element = '.dropdown-lang';
+      thisClass(element);
+    })
+
+    $('.header-menu-content-cat-toggle').click(function(e) {
+      e.preventDefault();
+      const element = '.header-menu-content-cat';
+      thisClass(element);
+    })
+/*
+    $('.language-picker').mouseout(function() {
+      const element = '.dropdown-lang';
+      $(element).removeClass('active');
+    })*/
 
    /* function navsCarousel(element, nav) {
       $(nav+' .prev').click(function() {

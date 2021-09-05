@@ -83,7 +83,7 @@ $(document).ready(function () {
       e.preventDefault();
       thisClass(".header-menu-items");
     })
-
+*/
     //CAROUSELS
     const homepage__slider = $('.homepage__slider');
     homepage__slider.owlCarousel({
@@ -96,7 +96,7 @@ $(document).ready(function () {
   $('.homepage__slider .owl-dot').click(function () {
     homepage__slider.trigger('to.owl.carousel', [$(this).index(), 300]);
   });
-
+/*
 
     const sale_product_carousel = $('.sale-product__carousel');
 

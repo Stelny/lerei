@@ -536,6 +536,9 @@ body {
     font-size: 14px;
     font-weight: 600;
 }
+.product-card-name:hover {
+    color: #2C2B2B;
+}
 .news-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -736,6 +739,14 @@ body {
 .catalog-filter-item select::after {
     content: url(../icons/arrow.svg);
     margin-left: auto;
+}
+.related__products {
+    padding: 3rem 0;
+
+}
+.related__products h2 {
+    padding-bottom: 2rem;
+    text-align: center;
 }
 @media (max-width: 1500px) { 
     .header ul li, .header ul li a {

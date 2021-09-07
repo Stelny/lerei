@@ -61,5 +61,18 @@ $(document).ready(function () {
       $('.filter-buttons').toggleClass('active');
     })
 
+    //CAROUSELS
+    const homepage__slider = $('.homepage__slider');
+    homepage__slider.owlCarousel({
+      loop:true,
+      nav:false,
+      items: 1,
+      dots: true
+  })
+  
+  $('.homepage__slider .owl-dot').click(function () {
+    homepage__slider.trigger('to.owl.carousel', [$(this).index(), 300]);
+  });
+
     
 });

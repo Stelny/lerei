@@ -9,15 +9,14 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nouislider.css">
     <link rel="stylesheet" href="css/custom.css">
-   
+    <link rel="stylesheet" href="css/nouislider.css">
     <title>Web server</title>
 </head>
 <body>
     <div class="header">
-        <div class="container big">
-            <div class="header-content">
+        <div class="container big d-flex">
+            <div class="header-content w-100">
                 <div class="left-header">
                     <ul>
                         <li class="socials">
@@ -220,7 +219,12 @@
             </div>
         </div>
     </div>
-    <div class="bread-custom">
+    <div class="subpage-banner">
+       <div class="container">
+            <h1>Blog</h1>
+       </div> 
+    </div>
+    <div class="bread-custom d-block d-sm-none">
         <div class="container">
             <ul>
                 <li>
@@ -234,210 +238,143 @@
             </ul>
         </div>
     </div>
-    <div class="product">
+    <div class="blog mt-5">
         <div class="container">
-            <div class="product-content">
-                <div class="product-content-image">
-                    <div class="product-small-images">
-                        <a href='' >
-                            <img src='images/detail.png' alt='detail' />
-                        </a>
-                        <a href=''>
-                            <img src='images/detail.png' alt='detail' />
-                        </a>
-                        <a href=''>
-                            <img src='images/detail.png' alt='detail' />
-                        </a>
-                    </div>
-                    <div class="product-big-image">
-                        
-                        <div class="product-big-nav prev">
-                            <a href='' class="prev">
-                                <img src='icons/arrow-slider.svg' alt='arrow-slider' />
-                            </a>
-                        </div>  
-                        <div class="owl-carousel owl-theme product__carousel">
-                            <div class="product-image-big">
-                                <img src='images/detail.png' alt='detail' />
-                            </div>
-                            <div class="product-image-big">
-                                <img src='images/detail.png' alt='detail' />
-                            </div>
-                            
-                        </div>
-                        <div class="product-big-nav next">
-                            <a href='' class="next">
-                                <img src='icons/arrow-slider.svg' alt='arrow-slider' />
-                            </a>
-                        </div>   
-                    </div>
-                </div>
-                <div class="product-content-content">
-                    <div class="d-flex">
-                        <h1>Letné šaty - modré</h1>
-                        <a href="" class="ml-md-0 ml-4  d-md-none d-flex ">
-                            <img src="icons/hearth-detail.svg" alt="hearth detail" />
-                        </a>
-                    </div>
-                    <div class="product-card-price">
-                        <span class="sale">33,00 €</span>
-                        <span class="old-price">27,00 €</span>
-                    </div>
-                    <div class="pt-4 align-items-center d-md-flex d-none">
-                        <a href="" class="btn-clear">
-                            Do košíka
-                        </a>
-                        <a href="" class="ml-4">
-                            <img src="icons/hearth-detail.svg" alt="hearth detail" />
-                        </a>
-                    </div>
-                    <div class="product-variants">
-                        <select>
-                            <option>
-                                34 - posledný kus
-                            </option>
-                            <option>
-                                33 - posledný kus
-                            </option>
-                            <option>
-                                32 - posledný kus
-                            </option>
-                        </select>
-                        <div class="d-flex flex-wrap pt-3">
-                            <p>Modelka je vysoká 170 cm a má na sebe veľkosť 34</p>
-                            <a href=''>Tabuľka veľkostí</a>
-                        </div>
-                    </div>
-                    <div class="product-table">
-                        <div class="product-table-item">
-                            <a href='' class="product-table-heading">
-                                O produkte
-                            </a>
-                            <div class="product-table-content">
-                                <p>Šaty z kolekcie jar / leto. Model áčkového strihu vytvorený z lorem ipsum.</p>
-                            </div>
-                        </div>
-                        <div class="product-table-item">
-                            <a href='' class="product-table-heading">
-                                O produkte
-                            </a>
-                            <div class="product-table-content">
-                                <p>Šaty z kolekcie jar / leto. Model áčkového strihu vytvorený z lorem ipsum.</p>
-                            </div>
-                        </div>
-                        <div class="product-table-item">
-                            <a href='' class="product-table-heading">
-                                O produkte
-                            </a>
-                            <div class="product-table-content">
-                                <p>Šaty z kolekcie jar / leto. Model áčkového strihu vytvorený z lorem ipsum.</p>
-                            </div>
-                        </div>
-                        <div class="product-table-item">
-                            <a href='' class="product-table-heading">
-                                O produkte
-                            </a>
-                            <div class="product-table-content">
-                                <p>Šaty z kolekcie jar / leto. Model áčkového strihu vytvorený z lorem ipsum.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-md-none d-flex pt-md-0 pt-4">
-                        <a href="" class="btn-clear w-100 mw-unset">
-                            Do košíka
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="related__products">
-                <h2>Podobné produkty</h2>
+            <div class="blog-content">
                 <div class="row">
-                    <div class="col-xl-3 col-lg-6 px-md-3 px-0 ">
-                        <div class="product-card">
-                            <div class="product-card-image">
-                        
-                                <a href='' class="product-card-image-href">
+                    <div class="col-lg-4 col-md-6 col-sm-12 px-md-3 px-0 mt-4">
+                        <div class="blog-card">
+                            <div class="blog-card-image">
+                                <a href='' class="blog-card-image-href">
                                     <img src='images/product.png' alt='image'/>
                                 </a>
-                                <div class="favorite">
-                                    <img src='icons/hearth-card.svg' alt='hearth card' />
-                                </div>
                             </div>
-                            <div class="product-card-text">
-                                <div class="product-card-price">
-                                    <span class="sale">33,00 €</span>
-                                    <span class="old-price">27,00 €</span>
-                                </div>
-                                <a href="" class="product-card-name">
-                                        Letné šaty
-                                    </a>
+                            <div class="blog-card-text">
+                                <p class="blog-title">Prechodné rifľové bundy</p>
+                                <p class="blog-date">22.04.2021</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-6 px-md-3 px-0">
-                        <div class="product-card">
-                            <div class="product-card-image">
-                        
-                                <a href='' class="product-card-image-href">
+                    <div class="col-lg-4 col-md-6 col-sm-12 px-md-3 px-0 mt-4">
+                        <div class="blog-card">
+                            <div class="blog-card-image">
+                                <a href='' class="blog-card-image-href">
                                     <img src='images/product.png' alt='image'/>
                                 </a>
-                                <div class="favorite">
-                                    <img src='icons/hearth-card.svg' alt='hearth card' />
-                                </div>
                             </div>
-                            <div class="product-card-text">
-                                <div class="product-card-price">
-                                    <span class="sale">33,00 €</span>
-                                    <span class="old-price">27,00 €</span>
-                                </div>
-                                <a href="" class="product-card-name">
-                                        Letné šaty
-                                    </a>
+                            <div class="blog-card-text">
+                                <p class="blog-title">Prechodné rifľové bundy</p>
+                                <p class="blog-date">22.04.2021</p>
                             </div>
-
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-6 px-md-3 px-0">
-                        <div class="product-card">
-                            <div class="product-card-image">
-                        
-                                <a href='' class="product-card-image-href">
+                    <div class="col-lg-4 col-md-6 col-sm-12 px-md-3 px-0 mt-4">
+                        <div class="blog-card">
+                            <div class="blog-card-image">
+                                <a href='' class="blog-card-image-href">
                                     <img src='images/product.png' alt='image'/>
                                 </a>
-                                <div class="favorite">
-                                    <img src='icons/hearth-card.svg' alt='hearth card' />
-                                </div>
                             </div>
-                            <div class="product-card-text">
-                                <div class="product-card-price">
-                                    <span class="sale">33,00 €</span>
-                                    <span class="old-price">27,00 €</span>
-                                </div>
-                                <a href="" class="product-card-name">
-                                        Letné šaty
-                                    </a>
+                            <div class="blog-card-text">
+                                <p class="blog-title">Prechodné rifľové bundy</p>
+                                <p class="blog-date">22.04.2021</p>
                             </div>
                         </div>
-                    </div><div class="col-xl-3 col-lg-6 px-md-3 px-0">
-                        <div class="product-card">
-                            <div class="product-card-image">
-                                <a href='' class="product-card-image-href">
+                    </div>
+                    <div class="col-12">
+                        <div class="blog-card-banner">
+                            <div class="blog-card-banner-image">
+                                <img src='images/bg.png' alt='image'/>
+                                <div class="blog-card-banner-text">
+                                    <p>Letné „must-have“ tipy od LeRei</p>
+                                    <a href="" class="btn-clear">čítať</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 px-md-3 px-0 mt-4">
+                        <div class="blog-card">
+                            <div class="blog-card-image">
+                                <a href='' class="blog-card-image-href">
                                     <img src='images/product.png' alt='image'/>
                                 </a>
-                                <div class="favorite">
-                                    <img src='icons/hearth-card.svg' alt='hearth card' />
-                                </div>
                             </div>
-                            <div class="product-card-text">
-                                <div class="product-card-price">
-                                    <span class="sale">33,00 €</span>
-                                    <span class="old-price">27,00 €</span>
-                                </div>
-                                <a href="" class="product-card-name">
-                                        Letné šaty
-                                    </a>
+                            <div class="blog-card-text">
+                                <p class="blog-title">Prechodné rifľové bundy</p>
+                                <p class="blog-date">22.04.2021</p>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 px-md-3 px-0 mt-4">
+                        <div class="blog-card">
+                            <div class="blog-card-image">
+                                <a href='' class="blog-card-image-href">
+                                    <img src='images/product.png' alt='image'/>
+                                </a>
+                            </div>
+                            <div class="blog-card-text">
+                                <p class="blog-title">Prechodné rifľové bundy</p>
+                                <p class="blog-date">22.04.2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 px-md-3 px-0 mt-4">
+                        <div class="blog-card">
+                            <div class="blog-card-image">
+                                <a href='' class="blog-card-image-href">
+                                    <img src='images/product.png' alt='image'/>
+                                </a>
+                            </div>
+                            <div class="blog-card-text">
+                                <p class="blog-title">Prechodné rifľové bundy</p>
+                                <p class="blog-date">22.04.2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 px-md-3 px-0 mt-4">
+                        <div class="blog-card">
+                            <div class="blog-card-image">
+                                <a href='' class="blog-card-image-href">
+                                    <img src='images/product.png' alt='image'/>
+                                </a>
+                            </div>
+                            <div class="blog-card-text">
+                                <p class="blog-title">Prechodné rifľové bundy</p>
+                                <p class="blog-date">22.04.2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 px-md-3 px-0 mt-4">
+                        <div class="blog-card">
+                            <div class="blog-card-image">
+                                <a href='' class="blog-card-image-href">
+                                    <img src='images/product.png' alt='image'/>
+                                </a>
+                            </div>
+                            <div class="blog-card-text">
+                                <p class="blog-title">Prechodné rifľové bundy</p>
+                                <p class="blog-date">22.04.2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 px-md-3 px-0 mt-4">
+                        <div class="blog-card">
+                            <div class="blog-card-image">
+                                <a href='' class="blog-card-image-href">
+                                    <img src='images/product.png' alt='image'/>
+                                </a>
+                            </div>
+                            <div class="blog-card-text">
+                                <p class="blog-title">Prechodné rifľové bundy</p>
+                                <p class="blog-date">22.04.2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-5">
+                        <div class="account-bottom">
+                            <a href='' class="btn-clear">
+                                Načítať ďaľšie
+                            </a>
                         </div>
                     </div>
                 </div>

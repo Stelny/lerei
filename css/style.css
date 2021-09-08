@@ -328,10 +328,12 @@ body {
 .footer__item ul {
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
+    line-height: 2;
 }
 .footer__item ul li a, .footer__item ul li{
     font-size: 14px;
-    color: #686464;
+    color: rgba(0,0,0,.6);
     font-weight: 500;
 }
 .footer__contacts {
@@ -340,7 +342,7 @@ body {
     display: none;
 }
 .footer__contacts a, .footer__contacts p {
-    color: #686464;
+    color: rgba(0,0,0,.6);
     font-weight: 500;
     max-width: 300px;
     display: flex;
@@ -364,7 +366,9 @@ body {
     max-width: 200px;
 }
 .copyright {
-    color: #686464;
+    color: rgba(0,0,0,0.6);
+    margin-top: 2rem;
+    font-size: 14px;
 }
 .newsletter {
     padding: 2rem 0;
@@ -398,7 +402,7 @@ body {
 }
 .newsletter-small {
 
-    color: #686464;
+    color: rgba(0,0,0,0.6);
     font-size: 14px;
 }
 .newsletter form {
@@ -502,8 +506,9 @@ body {
     background: white;
 }
 .product-card {
-    max-width: 330px;
+    max-width: unset;
     width: 100%;
+    margin-bottom: 1rem;
 }
 .product-card-image {
     height: 440px;
@@ -570,6 +575,7 @@ body {
 .news-heading h2 {
     font-size: 60px;
     text-align: right;
+    font-weight: 500;
 }
 .news-content {
     width: 100%;
@@ -602,7 +608,7 @@ body {
 }
 .promo-text h2 {
     font-size: 60px;
-    font-weight: 700;
+    font-weight: 600;
 }
 .account {
     padding: 3rem 0;
@@ -757,6 +763,7 @@ body {
     display: flex;
     align-items: center;
     z-index: 1;
+    padding-right: 1.5rem;
 }
 .catalog-filter-item::after {
     content: url(../icons/arrow.svg);
